@@ -1,0 +1,18 @@
+<% _.each(data,function(n){ %>
+<li>
+    <div class="pos-main">
+        <div class="pos-box">
+            <img class="large-model" src="<%= n.cover %>" />
+            <% if(n.miniCover) {%>
+                <img class="mini-model" src="<%= n.miniCover %>" />
+            <% } %>
+            <div class="pos-con">
+                <div class="pos-title"><%= n.title %></div>
+                <div class="pos-info">  
+                    <p><%= n.des %></p>
+                </div>   
+            </div>
+        </div>
+    </div>
+</li>
+<% })%>

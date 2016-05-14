@@ -1,0 +1,5 @@
+<% _.each(data,function(n,i){ %>
+<li>
+    <a class="pic-link"  href="<%= n.photo%>" target="_blank"><img src="/public/static/images/lazy.png" data-original="<%= n.photo%>" class="lazyload" /></a>
+</li>
+<% })%>

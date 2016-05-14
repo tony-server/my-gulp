@@ -1,0 +1,13 @@
+<% if(error){ %>
+<div class="">对不起，您访问的文章不存在！</div>
+<% } else { %>
+<h1 class="article-title"><%= title %></h1>
+<div class="article-inner"><%= content %></div>
+<div class="article-pager">
+    下一篇：<% if(nextArticle){ %>
+    <a class="next-article" href="/article-detail.html?article_id=<%= nextArticle.id %>"><%= nextArticle.title %></a>
+    <% } else{%>
+   无
+    <% }%>
+</div>
+<% } %>
