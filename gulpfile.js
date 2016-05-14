@@ -20,7 +20,7 @@ var clean = require('gulp-clean')									//删除文件夹及文件
 var runSequence = require('gulp-sequence')							//gulp按顺序执行任务
 
 var tinypng = require("gulp-tinypng");								//压缩图片
-var tinypng_api_key = "lpetoRr6T2mVgHS7FH_Jlojeua_fRVs0";			//需要去TINYPNG注册获取apikey
+var tinypng_api_key = "************************************";			//需要去TINYPNG注册获取apikey
 
 
 var handleError = function (err) {
